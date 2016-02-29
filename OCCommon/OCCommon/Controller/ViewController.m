@@ -23,6 +23,7 @@
     self.view.centerX = 100;
     
     self.view.top = 100;
+    
 }
 
 - (void)didReceiveMemoryWarning {
