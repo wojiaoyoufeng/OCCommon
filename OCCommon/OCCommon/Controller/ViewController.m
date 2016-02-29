@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.view.width = 100;
+    
+    self.view.centerX = 100;
+    
+    self.view.top = 100;
 }
 
 - (void)didReceiveMemoryWarning {

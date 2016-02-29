@@ -33,6 +33,9 @@
 		9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
 		9A14A0331C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
 		9A14A0341C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
+		9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
+		9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
+		9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,8 @@
 		9A14A0191C849C6E00A7FAA0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A14A01B1C849C6E00A7FAA0 /* OCCommon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OCCommon.xcdatamodel; sourceTree = "<group>"; };
 		9A14A0361C849CFA00A7FAA0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9A57433C1C84BA1200FE37F0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +183,7 @@
 		9A14A0111C849C6E00A7FAA0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9A57433B1C84BA1200FE37F0 /* UIView+ */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -200,6 +206,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9A57433B1C84BA1200FE37F0 /* UIView+ */ = {
+			isa = PBXGroup;
+			children = (
+				9A57433C1C84BA1200FE37F0 /* UIView+Extension.h */,
+				9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */,
+			);
+			name = "UIView+";
+			path = "../../../UIView+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9A14A0201C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A02F1C849C6E00A7FAA0 /* main.m in Sources */,
@@ -352,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A14A0211C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01E1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
 				9A14A0331C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
@@ -364,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A14A0221C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01F1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
 				9A14A0341C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
