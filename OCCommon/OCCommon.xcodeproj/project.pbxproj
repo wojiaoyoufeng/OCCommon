@@ -51,6 +51,9 @@
 		9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
 		9ADC88D91C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
 		9ADC88DA1C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
+		9ADC88F31C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
+		9ADC88F41C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
+		9ADC88F51C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,9 @@
 		9ADC88CF1C85125100CEE59C /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		9ADC88D01C85125100CEE59C /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+LOG.m"; sourceTree = "<group>"; };
+		9ADC88E71C85244700CEE59C /* CodeBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBlock.h; sourceTree = "<group>"; };
+		9ADC88F11C85269C00CEE59C /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,7 @@
 		9A14A0111C849C6E00A7FAA0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9ADC88E11C85241C00CEE59C /* CodeBlock */,
 				9ADC88D51C8514AB00CEE59C /* Foundation+ */,
 				9ADC88D41C85149500CEE59C /* UIWindow+ */,
 				9ADC88C91C85120B00CEE59C /* NSSting+ */,
@@ -273,6 +280,8 @@
 		9ADC88D41C85149500CEE59C /* UIWindow+ */ = {
 			isa = PBXGroup;
 			children = (
+				9ADC88F11C85269C00CEE59C /* UIWindow+Extension.h */,
+				9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */,
 			);
 			name = "UIWindow+";
 			path = "../../../UIWindow+";
@@ -285,6 +294,15 @@
 			);
 			name = "Foundation+";
 			path = "../../../Foundation+";
+			sourceTree = "<group>";
+		};
+		9ADC88E11C85241C00CEE59C /* CodeBlock */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC88E71C85244700CEE59C /* CodeBlock.h */,
+			);
+			name = CodeBlock;
+			path = ../../../CodeBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ADC88D11C85125100CEE59C /* NSString+Emoji.m in Sources */,
+				9ADC88F31C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9ADC88C61C85104000CEE59C /* BaseViewController.m in Sources */,
 				9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */,
@@ -443,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADC88F41C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9ADC88C71C85104000CEE59C /* BaseViewController.m in Sources */,
 				9ADC88C11C85104000CEE59C /* BaseNavigationController.m in Sources */,
@@ -461,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADC88F51C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9ADC88C81C85104000CEE59C /* BaseViewController.m in Sources */,
 				9ADC88C21C85104000CEE59C /* BaseNavigationController.m in Sources */,
