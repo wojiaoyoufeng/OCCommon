@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *美美的;
+@property (weak, nonatomic) UITableView * tablview;
 
 @end
 
@@ -19,12 +21,12 @@
     
     
     self.view.width = 100;
-    
     self.view.centerX = 100;
-    
     self.view.top = 100;
     
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
