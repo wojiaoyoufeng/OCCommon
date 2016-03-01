@@ -57,6 +57,11 @@
     return [[[self class] alloc] init];
 }
 
++ (instancetype)viewFromXib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+}
+
 - (void)loadContentsWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil
 {
     NSString *nibName = nibNameOrNil ?: NSStringFromClass([self class]);
@@ -180,6 +185,24 @@
     }]];
 }
 
+- (void)removeFromSuperViewAnimated
+{
+    [UIView animateWithDuration:0.6f animations:^{
+        self.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [self removeFromSuperview];
+        }
+    }];
+}
+
+- (void)removeAllSubViews
+{
+    [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [obj removeFromSuperview];
+    }];
+}
+
 - (BOOL)viewOrAnySuperviewMatchesPredicate:(NSPredicate *)predicate
 {
     if ([predicate evaluateWithObject:self])
@@ -195,22 +218,7 @@
         return [superview isKindOfClass:viewClass];
     }]];
 }
-- (void)removeFromSuperViewAnimated
-{
-    [UIView animateWithDuration:0.6f animations:^{
-        self.alpha = 0.0;
-    } completion:^(BOOL finished) {
-        if (finished) {
-            [self removeFromSuperview];
-        }
-    }];
-}
-- (void)removeAllSubViews
-{
-    [self.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [obj removeFromSuperview];
-    }];
-}
+
 - (BOOL)isSuperviewOfView:(UIView *)view
 {
     return [self firstSuperviewMatchingPredicate:[NSPredicate predicateWithBlock:^BOOL(UIView *superview, __unused id bindings) {
@@ -221,6 +229,21 @@
 - (BOOL)isSubviewOfView:(UIView *)view
 {
     return [view isSuperviewOfView:self];
+}
+
+- (BOOL)isShowingOnKeyWindow
+{
+    // 主窗口
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    
+    // 以主窗口左上角为坐标原点, 计算self的矩形框
+    CGRect newFrame = [keyWindow convertRect:self.frame fromView:self.superview];
+    CGRect winBounds = keyWindow.bounds;
+    
+    // 主窗口的bounds 和 self的矩形框 是否有重叠
+    BOOL intersects = CGRectIntersectsRect(newFrame, winBounds);
+    
+    return !self.isHidden && self.alpha > 0.01 && self.window == keyWindow && intersects;
 }
 
 //responder chain

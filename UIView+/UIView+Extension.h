@@ -17,6 +17,7 @@
 
 #pragma -- nib loading
 + (id)instanceWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil owner:(id)owner;
++ (instancetype)viewFromXib;
 - (void)loadContentsWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)bundleOrNil;
 
 #pragma -- hierarchy
@@ -40,6 +41,7 @@
 - (BOOL)viewOrAnySuperviewIsKindOfClass:(Class)viewClass;
 - (BOOL)isSuperviewOfView:(UIView *)view;
 - (BOOL)isSubviewOfView:(UIView *)view;
+- (BOOL)isShowingOnKeyWindow;
 
 - (UIViewController *)firstViewController;
 - (UIView *)firstResponder;
