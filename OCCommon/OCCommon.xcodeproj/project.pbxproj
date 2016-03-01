@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A017A371C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
+		9A017A381C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
+		9A017A391C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
 		9A149FF21C849A0800A7FAA0 /* OCCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */; };
 		9A149FFD1C849A0800A7FAA0 /* OCCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A149FFC1C849A0800A7FAA0 /* OCCommonUITests.m */; };
 		9A14A01D1C849C6E00A7FAA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A00C1C849C6E00A7FAA0 /* AppDelegate.m */; };
@@ -74,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A017A351C854D2300FE64D7 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		9A017A361C854D2300FE64D7 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		9A149FD11C849A0800A7FAA0 /* OCCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FED1C849A0800A7FAA0 /* OCCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonTests.m; sourceTree = "<group>"; };
@@ -133,6 +138,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A017A341C854CF200FE64D7 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9A017A351C854D2300FE64D7 /* Singleton.h */,
+				9A017A361C854D2300FE64D7 /* Singleton.m */,
+			);
+			name = Singleton;
+			path = ../../../Singleton;
+			sourceTree = "<group>";
+		};
 		9A149FC81C849A0800A7FAA0 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +222,7 @@
 		9A14A0101C849C6E00A7FAA0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A017A341C854CF200FE64D7 /* Singleton */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,6 +469,7 @@
 				9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9ADC88C01C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9A14A0201C849C6E00A7FAA0 /* ViewController.m in Sources */,
+				9A017A371C854D2300FE64D7 /* Singleton.m in Sources */,
 				9A14A02F1C849C6E00A7FAA0 /* main.m in Sources */,
 				9A14A01D1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
 			);
@@ -462,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A017A381C854D2300FE64D7 /* Singleton.m in Sources */,
 				9ADC88F41C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9ADC88C71C85104000CEE59C /* BaseViewController.m in Sources */,
@@ -481,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A017A391C854D2300FE64D7 /* Singleton.m in Sources */,
 				9ADC88F51C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9ADC88C81C85104000CEE59C /* BaseViewController.m in Sources */,
