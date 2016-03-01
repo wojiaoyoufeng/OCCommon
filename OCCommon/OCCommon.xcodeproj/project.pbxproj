@@ -10,6 +10,9 @@
 		9A017A371C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
 		9A017A381C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
 		9A017A391C854D2300FE64D7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A361C854D2300FE64D7 /* Singleton.m */; };
+		9A017A441C85EE0100FE64D7 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A431C85EE0100FE64D7 /* NSString+Hash.m */; };
+		9A017A451C85EE0100FE64D7 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A431C85EE0100FE64D7 /* NSString+Hash.m */; };
+		9A017A461C85EE0100FE64D7 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A017A431C85EE0100FE64D7 /* NSString+Hash.m */; };
 		9A149FF21C849A0800A7FAA0 /* OCCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */; };
 		9A149FFD1C849A0800A7FAA0 /* OCCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A149FFC1C849A0800A7FAA0 /* OCCommonUITests.m */; };
 		9A14A01D1C849C6E00A7FAA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A00C1C849C6E00A7FAA0 /* AppDelegate.m */; };
@@ -79,6 +82,8 @@
 /* Begin PBXFileReference section */
 		9A017A351C854D2300FE64D7 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		9A017A361C854D2300FE64D7 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		9A017A421C85EE0100FE64D7 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		9A017A431C85EE0100FE64D7 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		9A149FD11C849A0800A7FAA0 /* OCCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FED1C849A0800A7FAA0 /* OCCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonTests.m; sourceTree = "<group>"; };
@@ -288,6 +293,8 @@
 			children = (
 				9ADC88CF1C85125100CEE59C /* NSString+Emoji.h */,
 				9ADC88D01C85125100CEE59C /* NSString+Emoji.m */,
+				9A017A421C85EE0100FE64D7 /* NSString+Hash.h */,
+				9A017A431C85EE0100FE64D7 /* NSString+Hash.m */,
 			);
 			name = "NSSting+";
 			path = "../../../NSSting+";
@@ -466,6 +473,7 @@
 				9ADC88C61C85104000CEE59C /* BaseViewController.m in Sources */,
 				9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */,
 				9ADC88C31C85104000CEE59C /* BaseTabBarController.m in Sources */,
+				9A017A441C85EE0100FE64D7 /* NSString+Hash.m in Sources */,
 				9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9ADC88C01C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9A14A0201C849C6E00A7FAA0 /* ViewController.m in Sources */,
@@ -491,6 +499,7 @@
 				9ADC88C41C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0331C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9A14A0301C849C6E00A7FAA0 /* main.m in Sources */,
+				9A017A451C85EE0100FE64D7 /* NSString+Hash.m in Sources */,
 				9A149FF21C849A0800A7FAA0 /* OCCommonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +520,7 @@
 				9ADC88C51C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0341C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9A14A0311C849C6E00A7FAA0 /* main.m in Sources */,
+				9A017A461C85EE0100FE64D7 /* NSString+Hash.m in Sources */,
 				9A149FFD1C849A0800A7FAA0 /* OCCommonUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
