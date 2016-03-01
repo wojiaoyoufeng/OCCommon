@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    /**
+     以下最为常用的定义widow方式
+     */
+    
+    
+    
     return YES;
 }
 

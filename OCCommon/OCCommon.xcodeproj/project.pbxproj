@@ -36,15 +36,21 @@
 		9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
 		9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
 		9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
-		9ADC88B01C850F3E00CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AB1C850F3E00CEE59C /* BaseNavigationController.m */; };
-		9ADC88B11C850F3E00CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AB1C850F3E00CEE59C /* BaseNavigationController.m */; };
-		9ADC88B21C850F3E00CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AB1C850F3E00CEE59C /* BaseNavigationController.m */; };
-		9ADC88B31C850F3E00CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AD1C850F3E00CEE59C /* BaseTabBarController.m */; };
-		9ADC88B41C850F3E00CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AD1C850F3E00CEE59C /* BaseTabBarController.m */; };
-		9ADC88B51C850F3E00CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AD1C850F3E00CEE59C /* BaseTabBarController.m */; };
-		9ADC88B61C850F3E00CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AF1C850F3E00CEE59C /* BaseViewController.m */; };
-		9ADC88B71C850F3E00CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AF1C850F3E00CEE59C /* BaseViewController.m */; };
-		9ADC88B81C850F3E00CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88AF1C850F3E00CEE59C /* BaseViewController.m */; };
+		9ADC88C01C85104000CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BB1C85104000CEE59C /* BaseNavigationController.m */; };
+		9ADC88C11C85104000CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BB1C85104000CEE59C /* BaseNavigationController.m */; };
+		9ADC88C21C85104000CEE59C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BB1C85104000CEE59C /* BaseNavigationController.m */; };
+		9ADC88C31C85104000CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BD1C85104000CEE59C /* BaseTabBarController.m */; };
+		9ADC88C41C85104000CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BD1C85104000CEE59C /* BaseTabBarController.m */; };
+		9ADC88C51C85104000CEE59C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BD1C85104000CEE59C /* BaseTabBarController.m */; };
+		9ADC88C61C85104000CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BF1C85104000CEE59C /* BaseViewController.m */; };
+		9ADC88C71C85104000CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BF1C85104000CEE59C /* BaseViewController.m */; };
+		9ADC88C81C85104000CEE59C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88BF1C85104000CEE59C /* BaseViewController.m */; };
+		9ADC88D11C85125100CEE59C /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D01C85125100CEE59C /* NSString+Emoji.m */; };
+		9ADC88D21C85125100CEE59C /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D01C85125100CEE59C /* NSString+Emoji.m */; };
+		9ADC88D31C85125100CEE59C /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D01C85125100CEE59C /* NSString+Emoji.m */; };
+		9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
+		9ADC88D91C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
+		9ADC88DA1C8517C100CEE59C /* Foundation+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +91,15 @@
 		9A14A0361C849CFA00A7FAA0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9A57433C1C84BA1200FE37F0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		9ADC88AA1C850F3E00CEE59C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		9ADC88AB1C850F3E00CEE59C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		9ADC88AC1C850F3E00CEE59C /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
-		9ADC88AD1C850F3E00CEE59C /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		9ADC88AE1C850F3E00CEE59C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		9ADC88AF1C850F3E00CEE59C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9ADC88BA1C85104000CEE59C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		9ADC88BB1C85104000CEE59C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		9ADC88BC1C85104000CEE59C /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		9ADC88BD1C85104000CEE59C /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		9ADC88BE1C85104000CEE59C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9ADC88BF1C85104000CEE59C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9ADC88CF1C85125100CEE59C /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		9ADC88D01C85125100CEE59C /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+LOG.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +191,7 @@
 		9A14A00D1C849C6E00A7FAA0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC88A91C850F3E00CEE59C /* baseController+ */,
+				9ADC88B91C85104000CEE59C /* BaseController+ */,
 				9A14A00E1C849C6E00A7FAA0 /* ViewController.h */,
 				9A14A00F1C849C6E00A7FAA0 /* ViewController.m */,
 			);
@@ -199,6 +208,9 @@
 		9A14A0111C849C6E00A7FAA0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9ADC88D51C8514AB00CEE59C /* Foundation+ */,
+				9ADC88D41C85149500CEE59C /* UIWindow+ */,
+				9ADC88C91C85120B00CEE59C /* NSSting+ */,
 				9A57433B1C84BA1200FE37F0 /* UIView+ */,
 			);
 			path = Other;
@@ -234,18 +246,45 @@
 			path = "../../../UIView+";
 			sourceTree = "<group>";
 		};
-		9ADC88A91C850F3E00CEE59C /* baseController+ */ = {
+		9ADC88B91C85104000CEE59C /* BaseController+ */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC88AA1C850F3E00CEE59C /* BaseNavigationController.h */,
-				9ADC88AB1C850F3E00CEE59C /* BaseNavigationController.m */,
-				9ADC88AC1C850F3E00CEE59C /* BaseTabBarController.h */,
-				9ADC88AD1C850F3E00CEE59C /* BaseTabBarController.m */,
-				9ADC88AE1C850F3E00CEE59C /* BaseViewController.h */,
-				9ADC88AF1C850F3E00CEE59C /* BaseViewController.m */,
+				9ADC88BA1C85104000CEE59C /* BaseNavigationController.h */,
+				9ADC88BB1C85104000CEE59C /* BaseNavigationController.m */,
+				9ADC88BC1C85104000CEE59C /* BaseTabBarController.h */,
+				9ADC88BD1C85104000CEE59C /* BaseTabBarController.m */,
+				9ADC88BE1C85104000CEE59C /* BaseViewController.h */,
+				9ADC88BF1C85104000CEE59C /* BaseViewController.m */,
 			);
-			name = "baseController+";
-			path = "../../../baseController+";
+			name = "BaseController+";
+			path = "../../../BaseController+";
+			sourceTree = "<group>";
+		};
+		9ADC88C91C85120B00CEE59C /* NSSting+ */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC88CF1C85125100CEE59C /* NSString+Emoji.h */,
+				9ADC88D01C85125100CEE59C /* NSString+Emoji.m */,
+			);
+			name = "NSSting+";
+			path = "../../../NSSting+";
+			sourceTree = "<group>";
+		};
+		9ADC88D41C85149500CEE59C /* UIWindow+ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UIWindow+";
+			path = "../../../UIWindow+";
+			sourceTree = "<group>";
+		};
+		9ADC88D51C8514AB00CEE59C /* Foundation+ */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC88D71C8517C100CEE59C /* Foundation+LOG.m */,
+			);
+			name = "Foundation+";
+			path = "../../../Foundation+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,11 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADC88D11C85125100CEE59C /* NSString+Emoji.m in Sources */,
 				9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
-				9ADC88B61C850F3E00CEE59C /* BaseViewController.m in Sources */,
-				9ADC88B31C850F3E00CEE59C /* BaseTabBarController.m in Sources */,
+				9ADC88C61C85104000CEE59C /* BaseViewController.m in Sources */,
+				9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */,
+				9ADC88C31C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
-				9ADC88B01C850F3E00CEE59C /* BaseNavigationController.m in Sources */,
+				9ADC88C01C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9A14A0201C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A02F1C849C6E00A7FAA0 /* main.m in Sources */,
 				9A14A01D1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
@@ -403,11 +444,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
-				9ADC88B71C850F3E00CEE59C /* BaseViewController.m in Sources */,
-				9ADC88B11C850F3E00CEE59C /* BaseNavigationController.m in Sources */,
+				9ADC88C71C85104000CEE59C /* BaseViewController.m in Sources */,
+				9ADC88C11C85104000CEE59C /* BaseNavigationController.m in Sources */,
+				9ADC88D21C85125100CEE59C /* NSString+Emoji.m in Sources */,
 				9A14A0211C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01E1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
-				9ADC88B41C850F3E00CEE59C /* BaseTabBarController.m in Sources */,
+				9ADC88D91C8517C100CEE59C /* Foundation+LOG.m in Sources */,
+				9ADC88C41C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0331C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9A14A0301C849C6E00A7FAA0 /* main.m in Sources */,
 				9A149FF21C849A0800A7FAA0 /* OCCommonTests.m in Sources */,
@@ -419,11 +462,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
-				9ADC88B81C850F3E00CEE59C /* BaseViewController.m in Sources */,
-				9ADC88B21C850F3E00CEE59C /* BaseNavigationController.m in Sources */,
+				9ADC88C81C85104000CEE59C /* BaseViewController.m in Sources */,
+				9ADC88C21C85104000CEE59C /* BaseNavigationController.m in Sources */,
+				9ADC88D31C85125100CEE59C /* NSString+Emoji.m in Sources */,
 				9A14A0221C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01F1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
-				9ADC88B51C850F3E00CEE59C /* BaseTabBarController.m in Sources */,
+				9ADC88DA1C8517C100CEE59C /* Foundation+LOG.m in Sources */,
+				9ADC88C51C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0341C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
 				9A14A0311C849C6E00A7FAA0 /* main.m in Sources */,
 				9A149FFD1C849A0800A7FAA0 /* OCCommonUITests.m in Sources */,
