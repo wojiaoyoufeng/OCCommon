@@ -27,7 +27,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
    
-    CountryViewController * countryViewController = [[CountryViewController alloc] init];
+    GuidepageViewController * countryViewController = [[GuidepageViewController alloc] init];
     
     self.window.rootViewController = countryViewController;
     

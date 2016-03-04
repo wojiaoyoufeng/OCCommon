@@ -627,6 +627,12 @@
 		9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
 		9A14A0331C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
 		9A14A0341C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */; };
+		9A3B79731C897561004304FD /* GuidepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B79721C897561004304FD /* GuidepageViewController.m */; };
+		9A3B79791C89915D004304FD /* guide1Background568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3B79751C89915D004304FD /* guide1Background568h@2x.png */; };
+		9A3B797A1C89915D004304FD /* guide2Background568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3B79761C89915D004304FD /* guide2Background568h@2x.png */; };
+		9A3B797B1C89915D004304FD /* guide3Background568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3B79771C89915D004304FD /* guide3Background568h@2x.png */; };
+		9A3B797C1C89915D004304FD /* guide4Background568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3B79781C89915D004304FD /* guide4Background568h@2x.png */; };
+		9A3B797F1C89E9E4004304FD /* GuidepageCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B797E1C89E9E4004304FD /* GuidepageCollectionController.m */; };
 		9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
 		9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
 		9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */; };
@@ -889,6 +895,14 @@
 		9A14A0191C849C6E00A7FAA0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A14A01B1C849C6E00A7FAA0 /* OCCommon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OCCommon.xcdatamodel; sourceTree = "<group>"; };
 		9A14A0361C849CFA00A7FAA0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9A3B79711C897561004304FD /* GuidepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidepageViewController.h; sourceTree = "<group>"; };
+		9A3B79721C897561004304FD /* GuidepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidepageViewController.m; sourceTree = "<group>"; };
+		9A3B79751C89915D004304FD /* guide1Background568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide1Background568h@2x.png"; sourceTree = "<group>"; };
+		9A3B79761C89915D004304FD /* guide2Background568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide2Background568h@2x.png"; sourceTree = "<group>"; };
+		9A3B79771C89915D004304FD /* guide3Background568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide3Background568h@2x.png"; sourceTree = "<group>"; };
+		9A3B79781C89915D004304FD /* guide4Background568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guide4Background568h@2x.png"; sourceTree = "<group>"; };
+		9A3B797D1C89E9E4004304FD /* GuidepageCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidepageCollectionController.h; sourceTree = "<group>"; };
+		9A3B797E1C89E9E4004304FD /* GuidepageCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidepageCollectionController.m; sourceTree = "<group>"; };
 		9A57433C1C84BA1200FE37F0 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		9A57433D1C84BA1200FE37F0 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		9ADC88BA1C85104000CEE59C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -984,6 +998,11 @@
 		9A017A571C85FAD800FE64D7 /* GuidePage */ = {
 			isa = PBXGroup;
 			children = (
+				9A3B79741C89915D004304FD /* GuidepageImage */,
+				9A3B79711C897561004304FD /* GuidepageViewController.h */,
+				9A3B79721C897561004304FD /* GuidepageViewController.m */,
+				9A3B797D1C89E9E4004304FD /* GuidepageCollectionController.h */,
+				9A3B797E1C89E9E4004304FD /* GuidepageCollectionController.m */,
 			);
 			path = GuidePage;
 			sourceTree = "<group>";
@@ -1299,6 +1318,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9A3B79741C89915D004304FD /* GuidepageImage */ = {
+			isa = PBXGroup;
+			children = (
+				9A3B79751C89915D004304FD /* guide1Background568h@2x.png */,
+				9A3B79761C89915D004304FD /* guide2Background568h@2x.png */,
+				9A3B79771C89915D004304FD /* guide3Background568h@2x.png */,
+				9A3B79781C89915D004304FD /* guide4Background568h@2x.png */,
+			);
+			path = GuidepageImage;
+			sourceTree = "<group>";
+		};
 		9A57433B1C84BA1200FE37F0 /* UIView+ */ = {
 			isa = PBXGroup;
 			children = (
@@ -1474,6 +1504,7 @@
 				9A017D631C867BF200FE64D7 /* AreaCode.json in Resources */,
 				9A017CE91C85FB5500FE64D7 /* Slovenia.png in Resources */,
 				9A017D101C85FB5500FE64D7 /* Taiwan.png in Resources */,
+				9A3B797A1C89915D004304FD /* guide2Background568h@2x.png in Resources */,
 				9A017BEA1C85FB5500FE64D7 /* Honduras.png in Resources */,
 				9A017CB61C85FB5500FE64D7 /* Qatar.png in Resources */,
 				9A017B7B1C85FB5500FE64D7 /* Cayman_Is.png in Resources */,
@@ -1565,6 +1596,7 @@
 				9A017C0E1C85FB5500FE64D7 /* Jamaica.png in Resources */,
 				9A017BCF1C85FB5500FE64D7 /* Ghana.png in Resources */,
 				9A017C501C85FB5500FE64D7 /* Maldives.png in Resources */,
+				9A3B797B1C89915D004304FD /* guide3Background568h@2x.png in Resources */,
 				9A017BA21C85FB5500FE64D7 /* Djibouti.png in Resources */,
 				9A017C4A1C85FB5500FE64D7 /* Malawi.png in Resources */,
 				9A017CFB1C85FB5500FE64D7 /* StVincent.png in Resources */,
@@ -1597,6 +1629,7 @@
 				9A017CAD1C85FB5500FE64D7 /* Poland.png in Resources */,
 				9A017C771C85FB5500FE64D7 /* Namibia.png in Resources */,
 				9A017BC31C85FB5500FE64D7 /* Gabon.png in Resources */,
+				9A3B797C1C89915D004304FD /* guide4Background568h@2x.png in Resources */,
 				9A017B241C85FB5500FE64D7 /* Andorra.png in Resources */,
 				9A14A0231C849C6E00A7FAA0 /* Assets.xcassets in Resources */,
 				9A017C141C85FB5500FE64D7 /* Jordan.png in Resources */,
@@ -1636,6 +1669,7 @@
 				9A017C801C85FB5500FE64D7 /* Netherlands.png in Resources */,
 				9A017C261C85FB5500FE64D7 /* Kyrgyzstan.png in Resources */,
 				9A017BAE1C85FB5500FE64D7 /* Estonia.png in Resources */,
+				9A3B79791C89915D004304FD /* guide1Background568h@2x.png in Resources */,
 				9A017BBD1C85FB5500FE64D7 /* French_Guiana.png in Resources */,
 				9A017B361C85FB5500FE64D7 /* Ascension.png in Resources */,
 				9A017CE31C85FB5500FE64D7 /* Singapore.png in Resources */,
@@ -2088,11 +2122,13 @@
 				9ADC88D81C8517C100CEE59C /* Foundation+LOG.m in Sources */,
 				9ADC88C31C85104000CEE59C /* BaseTabBarController.m in Sources */,
 				9A14A0321C849C6E00A7FAA0 /* OCCommon.xcdatamodeld in Sources */,
+				9A3B797F1C89E9E4004304FD /* GuidepageCollectionController.m in Sources */,
 				9A017A491C85F3F600FE64D7 /* NSString+Encryption.m in Sources */,
 				9ADC88C01C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9A14A0201C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A017A581C85FAD800FE64D7 /* CountryViewController.m in Sources */,
 				9A017D5F1C85FCAD00FE64D7 /* CountryViewCell.m in Sources */,
+				9A3B79731C897561004304FD /* GuidepageViewController.m in Sources */,
 				9A017A371C854D2300FE64D7 /* Singleton.m in Sources */,
 				9A017D5A1C85FBFF00FE64D7 /* CountryModel.m in Sources */,
 				9A14A02F1C849C6E00A7FAA0 /* main.m in Sources */,

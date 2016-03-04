@@ -267,6 +267,7 @@ int _state;
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
     self.searchBar.showsCancelButton = YES;
+#pragma mark -- 这里设置搜索取消按钮
     UIView *topView = searchBar.subviews[0];
     for (UIButton * button in topView.subviews){
         if ([button isKindOfClass:[UIButton class]]) {
@@ -293,18 +294,6 @@ int _state;
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
-//    for (UIView * view in searchBar.subviews){
-//        if ([view isKindOfClass:[UIButton class]]) {
-//            UIButton *cancelB = (UIButton*)view;
-//            
-//            NSLog(@"    %@       ",view);
-//            
-//            NSString * cancelStr = isEnglish ? @"Cancel" : @"取消";
-//            [cancelB setTitle:cancelStr forState:UIControlStateNormal];
-//            [cancelB setBackgroundColor:[UIColor redColor]];
-//            [cancelB setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//        }
-//    }
     
     isSearching = NO;
     self.searchBar.text = @"";
