@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  OCCommon
+//
+//  Created by 一泓明峰 on 16/2/29.
+//  Copyright © 2016年 RJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Extension.h"
+
+//controller
+#import "CountryViewController.h"
+
+
+
+//颜色
+#define ARGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:(a)] //argb
+#define RGBColor(r,g,b) ARGBColor((r),(g),(b),1.0) //rgb
+#define GrayColor(v) RGBColor((v),(v),(v)) //灰色
+#define MaskColor(v) ARGBColor(0,0,0,(v)) //蒙版色
+
+//尺寸
+#define screenH  [UIScreen mainScreen].bounds.size.height
+#define screenW  [UIScreen mainScreen].bounds.size.width
+#define screenBounds [UIScreen mainScreen].bounds
+
+
+#endif /* PrefixHeader_pch */

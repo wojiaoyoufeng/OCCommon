@@ -37,12 +37,12 @@
 {
     
     NSMutableString *strM = [NSMutableString string];
-    [strM appendString:@"(\n"];
+    [strM appendString:@"[\n"];
     
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [strM appendFormat:@"\t%@,\n", obj];
     }];
-    [strM appendString:@")\n"];
+    [strM appendString:@"]\n"];
     
     if (self.count > 0) {
         NSRange range = [strM rangeOfString:@"," options:NSBackwardsSearch];
