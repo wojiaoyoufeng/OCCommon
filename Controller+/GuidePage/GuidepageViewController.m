@@ -107,17 +107,22 @@
             [imageV addGestureRecognizer:swipeG]; //轻扫
             
             UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+            [button setImage:[UIImage imageNamed:@"guideStart.png"] forState:UIControlStateNormal];
+            [button sizeToFit];
             [imageV addSubview:button];
             self.startBtn = button;
-            
-            [button addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchDown];
-            [button setBackgroundColor:[UIColor blackColor]];
-            CGFloat bHeight = 90;
-            CGFloat height = 100;
-            CGFloat width = 252;
-            button.frame = CGRectMake((screenW - width) * 0.5, screenH - height - bHeight, width, height);
+            [button addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
+            button.center = CGPointMake(screenW * 0.5, screenH * 0.85);
         }
     }
+}
+
+#pragma mark -- 接收个数
+- (void)setKGuidepageImageCount:(int)kGuidepageImageCount
+{
+    _kGuidepageImageCount = kGuidepageImageCount;
+    
+    self.guidePageControl.numberOfPages = kGuidepageImageCount;
 }
 
 #pragma mark - 点击按钮进入主页面

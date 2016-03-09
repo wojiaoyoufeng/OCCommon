@@ -27,9 +27,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
    
-    GuidepageViewController * countryViewController = [[GuidepageViewController alloc] init];
+    TestCollectionViewController * vc = [[TestCollectionViewController alloc] init];
     
-    self.window.rootViewController = countryViewController;
+    self.window.rootViewController = vc;
     
     
     //白色

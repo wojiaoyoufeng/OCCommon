@@ -10,4 +10,6 @@
 
 @interface GuidepageCollectionController : BaseViewController
 
+@property (assign, nonatomic) int kGuidepageImageCount;
+
 @end

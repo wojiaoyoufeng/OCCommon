@@ -15,11 +15,11 @@
 
 // ============  Objective-C  ==============
 
-// 星星注释 youf
+// /** */星星注释 youf
 /** <#desc...#> */
 // 标注#pragma
 pragma mark -- <#desc...#>
-// 自动提示宏 zidongtishihong
+// Zidongtishihong自动提示宏 zidongtishihong
 #define HFkeyPath(objc, keyPath) @(((void)objc.keyPath, #keyPath))
 
 // 加载xib xibLoad
@@ -36,28 +36,206 @@ pragma mark -- <#desc...#>
 // Delegate属性生成 delegatepro
 @property (weak, nonatomic) id<<#protocol#>> delegate<#jump#>
 
-// 代理监听 ifdelegate
+// Button控件生成 initButton
+UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+[<#view#> addSubview:button];
+[button addTarget:<#(nullable id)#> action:@selector(<#selector#>) forControlEvents:UIControlEve<#event#>];
+
+[button setBackgroundColor:<#(UIColor * _Nullable)#>];
+[button setBackgroundImage:[UIImage <#image#>] forState:<#(UIControlState)#>];
+
+[button setImage:[UIImage <#image#>] forState:<#(UIControlState)#>];
+
+[button setTintColor:<#(UIColor * _Nullable)#>];
+[button setTitle:<#(nullable NSString *)#> forState:<#(UIControlState)#>];
+
+[button setTag:100 + <#1#>];
+
+UIEdgeInsets edgeInsets = UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>);
+
+[button setImageEdgeInsets:<#(UIEdgeInsets)#>];
+[button setTitleEdgeInsets:<#(UIEdgeInsets)#>];
+
+button.enabled = YES;
+
+// ImageView控件生成 initImageview
+UIImageView * imageV = [[UIImageView alloc] init];
+[<#view#> addSubview:imageV];
+imageV.backgroundColor = [UIColor whiteColor];
+imageV.frame = CGRectMake(<#0#>, <#0#>, <#0#>, <#0#>);
+[imageV setImage:[UIImage <#image#>]];
+[imageV setHighlightedImage:[UIImage <#image#>]];
+
+// Label控件生成 initLabel
+UILabel * label = [[UILabel alloc] init];
+label.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+[<#view#> addSubview:label];
+label.numberOfLines = 0;
+[label setFont:[UIFont <#font#>]];
+[label setTextColor:[UIColor <#color#>]];
+[label setTextAlignment:<#(NSTextAlignment)#>];
+[label setBackgroundColor:<#(UIColor * _Nullable)#>];
+[label sizeToFit];
+label.text = <#text#>
+
+// View控件生成 initView
+UIView * view = [[UIView alloc] init];
+[<#view#> addSubview:view];
+view.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+view.backgroundColor = [UIColor <#color#>];
+
+// Layer设置边框圆角 initLayer
+<#name#>.layer.borderColor = [UIColor <#color#>];
+<#name#>.layer.borderWidth = <#0#>
+<#name#>.layer.cornerRadius = <#0#>
+<#name#>.layer.masksToBounds = YES;
+
+// Xywh定义 whxy
+CGFloat w = <#float#>
+CGFloat h = <#float#>
+CGFloat x = <#float#>
+CGFloat y = <#float#>
+
+// UITableview生成 initTableView
+UITableView * tableV = [[UITableView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>) style:UITableViewStyl<#style#>];
+[self.view addSubview:tableV];
+tableV.delegate = self;
+tableV.dataSource = self;
+tableV.rowHeight = <#float#>;
+tableV.sectionHeaderHeight = <#float#>;
+tableV.sectionFooterHeight = <#float#>;
+tableV.estimatedRowHeight = <#float#>;
+tableV.estimatedSectionHeaderHeight = <#float#>;
+tableV.estimatedSectionFooterHeight = <#float#>;
+/** 通常不设置
+ tableV.separatorInset = UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>);
+ tableV.backgroundView = <#view#>;
+ tableV.editing = NO;
+ tableV.allowsSelection = YES;
+ tableV.allowsMultipleSelection = NO;
+ tableV.allowsMultipleSelectionDuringEditing  = NO;
+ tableV.indexPathForSelectedRow = <#NSIndexPath#>;
+ tableV.indexPathsForSelectedRows = <#NSArray<NSIndexPath *> #>;
+ tableV.sectionIndexMinimumDisplayRowCount = <#NSInteger#>;
+ tableV.sectionIndexColor =  [UIColor <#color#>];
+ tableV.sectionIndexBackgroundColor =  [UIColor <#color#>];
+ tableV.sectionIndexTrackingBackgroundColor = [UIColor <#color#>];
+ tableV.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+ tableV.separatorColor = [UIColor <#color#>];
+ tableV.separatorEffect = <#UIVisualEffect#>; //毛玻璃效果
+ tableV.cellLayoutMarginsFollowReadableWidth = NO;
+ */
+tableV.tableHeaderView = <#view#>;
+tableV.tableFooterView = <#view#>;
+tableV.remembersLastFocusedIndexPath = NO;
+
+[tableV registerClass:[<#class#> class] forCellReuseIdentifier:<#(nonnull NSString *)#>];
+[tableV registerClass:[<#class#> class] forHeaderFooterViewReuseIdentifier:<#(nonnull NSString *)#>];
+
+// UICollectionView生成 initCollectView
+UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+layout.delegage = self;
+layout.minimumLineSpacing = 0;
+layout.minimumLineSpacing = 0;
+layout.itemSize = [UIScreen mainScreen].bounds.size;
+layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+layout.estimatedItemSize = CGSizeMake(<#CGFloat width#>, <#CGFloat height#>);
+layout.headerReferenceSize = CGSizeMake(<#CGFloat width#>, <#CGFloat height#>);
+layout.footerReferenceSize = CGSizeMake(<#CGFloat width#>, <#CGFloat height#>);
+layout.sectionInset = UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>);
+layout.sectionHeadersPinToVisibleBounds = NO;
+layout.sectionFootersPinToVisibleBounds = NO;
+
+UICollectionView * collectionV = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+[<#view#> addSubview:collectionV];
+collectionV.backgroundView = <#view#>
+collectionV.backgroundColor = [UIColor whiteColor];
+collectionV.dataSource = self;
+collectionV.delegate = self;
+collectionV.allowsSelection = YES;
+collectionV.allowsMultipleSelection = NO;
+[collectionV registerClass:[<#Object#> class] forCellWithReuseIdentifier:<#identifier#>];
+
+// TOWeb页面跳转 toWebView
+TOWebViewController * <#name#>Vc = [[TOWebViewController alloc] initWithURL:[NSURL URLWithString:<#URL#>]];
+/** 通常不用设置
+<#VCname#>.webView;
+<#VCname#>.showLoadingBar = YES;
+<#VCname#>.showUrlWhileLoading = YES;
+<#VCname#>.loadingBarTintColor = [UIColor <#color#>];
+<#VCname#>.navigationButtonsHidden = NO;
+<#VCname#>.showActionButton = YES;
+<#VCname#>.showDoneButton = YES;
+<#VCname#>.doneButtonTitle = <#text#>
+<#VCname#>.disableContextualPopupMenu = YES;
+<#VCname#>.hideWebViewBoundaries = YES;
+<#VCname#>.buttonTintColor = [UIColor <#color#>];
+*/
+<#VCname#>.showPageTitles = NO;//隐藏原来的导航
+UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:<#VCname#>];
+nav.navigationBar.barTintColor = [UIColor <#color#>];
+
+UINavigationBar * bar = <#VCname#>.navigationController.navigationBar;
+[bar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor <#color#>], NSForegroundColorAttributeName,nil]];
+bar.tintColor = [UIColor <#color#>];
+if([[[Device sharedDevice] getCurrentLanguage] containsString:@"zh-Hans"])
+{
+    <#VCname#>.title = <#text#>;
+}
+else
+{
+    <#VCname#>.title = <#text#>;
+}
+
+<#VCname#>.modalPresentationStyle = UIModalPresentationFullScreen;
+<#VCname#>.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+
+[self presentViewController:nav animated:YES completion:nil];
+
+
+// UISearchBar生成 initSearchBar
+UISearchBar * Sbar = [[UISearchBar alloc] init];
+[<#view#> addSubview:Sbar];
+Sbar.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+Sbar.delegate = self;
+Sbar.barStyle = UIBarStyleDefault;
+Sbar.showsBookmarkButton = YES;
+Sbar.showsCancelButton = YES;
+Sbar.showsSearchResultsButton = YES;
+
+Sbar.backgroundColor = [UIColor <#color#>];
+[Sbar setBackgroundImage:[UIImage <#image#>]];
+[Sbar setImage:[UIImage <#image#>] forSearchBarIcon:<#(UISearchBarIcon)#> state:<#(UIControlState)#>];
+
+Sbar.barTintColor =[UIColor <#color#>];
+Sbar.tintColor = [UIColor <#color#>];
+Sbar.prompt = <#text#>
+Sbar.placeholder = <#text#>
+
+// 索引字符
+NSArray *arr = @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z",@"#"];
+
+
+// IfDelegate代理监听 ifDelegate
 if([self.delegate respondsToSelector:@selector(<#selector#>)]){
    [self.delegate <#selector#>];<#jump#>
 }
 
-// 定义模型 initmodel.h
+// InitModel.h定义模型 initModel.h
 + (instancetype)<#model#>
 + (instancetype)<#model#>WintDict:(NSDictionary *)dict<#jump#>
 - (instancetype)initWithDict:(NSDictionary *)dict<#jump#>
 
-// 实例模型 initmodel.m
+// InitModel.m实例模型 initModel.m
 + (instancetype)<#model#>{
     
     return [[[self class] alloc] init];
 }
-<#jump#>
 
 + (instancetype)<#model#>WintDict:(NSDictionary *)dict{
     
     return [[self alloc] initWithDict:dict];
 }
-<#jump#>
 
 - (instancetype)initWithDict:(NSDictionary *)dict{
     
@@ -66,9 +244,8 @@ if([self.delegate respondsToSelector:@selector(<#selector#>)]){
     }
     return self;
 }
-<#jump#>
 
-// 初始化模型 initmodel
+// InitModel初始化模型 initModel
 - (instancetype)init
 {
     if (self = [super init]) {
@@ -78,23 +255,25 @@ if([self.delegate respondsToSelector:@selector(<#selector#>)]){
     }
     return self;
 }
-<#jump#>
 
 
-// 懒加载 if!
-if(!_<#name#>){
-    
-    <#init#>
-    _<#name#> = <#impl...#>
+// Lazy懒加载 lazy
+- <#name#>
+{
+    if (!_<#name#>) {
+        
+        
+        _<#name#> = <#impl...#>
     }
-    return _<#name#>
+    return _<#name#>;
+}
 
-// fori循环
+// fori循环 fori
 for (<#int#> i = 0; i < <#count#>; i++){
     
     <#wirte#>
 }
-// fori循环
+// forj循环 forj
 for (<#int#> j = 0; j < <#count#>; j++){
     
     <#wirte#>

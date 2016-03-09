@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 
 @interface GuidepageViewController : BaseViewController
+
 @property (assign, nonatomic) int kGuidepageImageCount;
 
 @end

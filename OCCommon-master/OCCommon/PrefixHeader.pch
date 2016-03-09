@@ -14,7 +14,10 @@
 //controller
 #import "CountryViewController.h"
 #import "GuidepageViewController.h"
-
+#import "GuidepageCollectionController.h"
+#import "WaterfallFlowViewController.h"
+#import "CollectionViewController.h"
+#import "TestCollectionViewController.h"
 
 
 //颜色
