@@ -27,7 +27,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
    
-    TestCollectionViewController * vc = [[TestCollectionViewController alloc] init];
+#pragma mark -- scrollView 引导页
+//    GuidepageViewController * vc = [[GuidepageViewController alloc] init];
+#pragma mark -- collectView 引导页
+//    GuidepageCollectionController * vc = [[GuidepageCollectionController alloc] init];
+#pragma mark -- 国际列表
+    CountryViewController * vc = [[CountryViewController alloc] init];
+#pragma mark -- 流水布局
+    
     
     self.window.rootViewController = vc;
     

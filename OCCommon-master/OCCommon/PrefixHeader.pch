@@ -16,7 +16,6 @@
 #import "GuidepageViewController.h"
 #import "GuidepageCollectionController.h"
 #import "WaterfallFlowViewController.h"
-#import "CollectionViewController.h"
 #import "TestCollectionViewController.h"
 
 

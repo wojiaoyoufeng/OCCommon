@@ -2,14 +2,12 @@
 //  GuidepageCollectionController.h
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/5.
+//  Created by 一泓明峰 on 16/3/11.
 //  Copyright © 2016年 RJ. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface GuidepageCollectionController : BaseViewController
-
-@property (assign, nonatomic) int kGuidepageImageCount;
+@interface GuidepageCollectionController : UICollectionViewController
 
 @end
