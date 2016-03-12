@@ -618,9 +618,6 @@
 		9A14A0291C849C6E00A7FAA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0161C849C6E00A7FAA0 /* Main.storyboard */; };
 		9A14A02A1C849C6E00A7FAA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0161C849C6E00A7FAA0 /* Main.storyboard */; };
 		9A14A02B1C849C6E00A7FAA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0161C849C6E00A7FAA0 /* Main.storyboard */; };
-		9A14A02C1C849C6E00A7FAA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0181C849C6E00A7FAA0 /* Info.plist */; };
-		9A14A02D1C849C6E00A7FAA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0181C849C6E00A7FAA0 /* Info.plist */; };
-		9A14A02E1C849C6E00A7FAA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A14A0181C849C6E00A7FAA0 /* Info.plist */; };
 		9A14A02F1C849C6E00A7FAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A0191C849C6E00A7FAA0 /* main.m */; };
 		9A14A0301C849C6E00A7FAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A0191C849C6E00A7FAA0 /* main.m */; };
 		9A14A0311C849C6E00A7FAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14A0191C849C6E00A7FAA0 /* main.m */; };
@@ -936,10 +933,8 @@
 		9A149FD11C849A0800A7FAA0 /* OCCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FED1C849A0800A7FAA0 /* OCCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonTests.m; sourceTree = "<group>"; };
-		9A149FF31C849A0800A7FAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A149FF81C849A0800A7FAA0 /* OCCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A149FFC1C849A0800A7FAA0 /* OCCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCommonUITests.m; sourceTree = "<group>"; };
-		9A149FFE1C849A0800A7FAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A14A00B1C849C6E00A7FAA0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A14A00C1C849C6E00A7FAA0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A14A00E1C849C6E00A7FAA0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -947,7 +942,6 @@
 		9A14A0131C849C6E00A7FAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A14A0151C849C6E00A7FAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A14A0171C849C6E00A7FAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A14A0181C849C6E00A7FAA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A14A0191C849C6E00A7FAA0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A14A01B1C849C6E00A7FAA0 /* OCCommon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OCCommon.xcdatamodel; sourceTree = "<group>"; };
 		9A14A0361C849CFA00A7FAA0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -1399,7 +1393,6 @@
 			isa = PBXGroup;
 			children = (
 				9A149FF11C849A0800A7FAA0 /* OCCommonTests.m */,
-				9A149FF31C849A0800A7FAA0 /* Info.plist */,
 			);
 			path = OCCommonTests;
 			sourceTree = "<group>";
@@ -1408,7 +1401,6 @@
 			isa = PBXGroup;
 			children = (
 				9A149FFC1C849A0800A7FAA0 /* OCCommonUITests.m */,
-				9A149FFE1C849A0800A7FAA0 /* Info.plist */,
 			);
 			path = OCCommonUITests;
 			sourceTree = "<group>";
@@ -1460,7 +1452,6 @@
 				9A14A0131C849C6E00A7FAA0 /* Assets.xcassets */,
 				9A14A0141C849C6E00A7FAA0 /* LaunchScreen.storyboard */,
 				9A14A0161C849C6E00A7FAA0 /* Main.storyboard */,
-				9A14A0181C849C6E00A7FAA0 /* Info.plist */,
 				9A14A0191C849C6E00A7FAA0 /* main.m */,
 				9A14A01A1C849C6E00A7FAA0 /* OCCommon.xcdatamodeld */,
 			);
@@ -1794,7 +1785,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = RJ;
+				ORGANIZATIONNAME = yf;
 				TargetAttributes = {
 					9A149FD01C849A0800A7FAA0 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1906,7 +1897,6 @@
 				9A017BC01C85FB5500FE64D7 /* French_Polynesia.png in Resources */,
 				9A017B481C85FB5500FE64D7 /* Bangladesh.png in Resources */,
 				9A017BF31C85FB5500FE64D7 /* Iceland.png in Resources */,
-				9A14A02C1C849C6E00A7FAA0 /* Info.plist in Resources */,
 				9A017BC91C85FB5500FE64D7 /* Georgia.png in Resources */,
 				9A017B421C85FB5500FE64D7 /* Bahamas.png in Resources */,
 				9A017CCE1C85FB5500FE64D7 /* Samoa_Western.png in Resources */,
@@ -2124,7 +2114,6 @@
 				9A017BC11C85FB5500FE64D7 /* French_Polynesia.png in Resources */,
 				9A017B491C85FB5500FE64D7 /* Bangladesh.png in Resources */,
 				9A017BF41C85FB5500FE64D7 /* Iceland.png in Resources */,
-				9A14A02D1C849C6E00A7FAA0 /* Info.plist in Resources */,
 				9A017BCA1C85FB5500FE64D7 /* Georgia.png in Resources */,
 				9A017B431C85FB5500FE64D7 /* Bahamas.png in Resources */,
 				9A017CCF1C85FB5500FE64D7 /* Samoa_Western.png in Resources */,
@@ -2328,7 +2317,6 @@
 				9A017BC21C85FB5500FE64D7 /* French_Polynesia.png in Resources */,
 				9A017B4A1C85FB5500FE64D7 /* Bangladesh.png in Resources */,
 				9A017BF51C85FB5500FE64D7 /* Iceland.png in Resources */,
-				9A14A02E1C849C6E00A7FAA0 /* Info.plist in Resources */,
 				9A017BCB1C85FB5500FE64D7 /* Georgia.png in Resources */,
 				9A017B441C85FB5500FE64D7 /* Bahamas.png in Resources */,
 				9A017CD01C85FB5500FE64D7 /* Samoa_Western.png in Resources */,
@@ -2699,6 +2687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = OCCommon/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/OCCommon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yihongmingfeng.OCCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2711,6 +2700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = OCCommon/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/OCCommon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yihongmingfeng.OCCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
