@@ -2,15 +2,15 @@
 //  GuidepageViewController.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/4.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/4.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import "GuidepageViewController.h"
 
 @interface GuidepageViewController ()<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 
-@property (weak, nonatomic) UIScrollView * guideScrollow;
+@property (weak, nonatomic) UIScrollView * guideScrollV;
 @property (weak, nonatomic) UIPageControl * guidePageControl;
 @property (weak, nonatomic) UIButton * startBtn;
 
@@ -19,31 +19,37 @@
 @implementation GuidepageViewController
 
 #pragma mark -- 懒加载
-- (UIScrollView *)guideScrollow
+- (UIScrollView *)guideScrollV
 {
-    if (!_guideScrollow) {
+    if (!_guideScrollV) {
         
-        UIScrollView * guideScrollow = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, screenW, screenH)];
+        UIScrollView * guideScrollV = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, screenW, screenH)];
         
-        [self.view addSubview:guideScrollow];
+        [self.view addSubview:guideScrollV];
         
-        guideScrollow.contentSize = CGSizeMake(screenW * self.kGuidepageImageCount, screenH);
-        guideScrollow.pagingEnabled = YES;
-        guideScrollow.bounces = NO;
-        guideScrollow.showsHorizontalScrollIndicator = NO;
-        guideScrollow.delegate = self;
-        guideScrollow.backgroundColor = [UIColor clearColor];
+        guideScrollV.contentSize = CGSizeMake(screenW * self.kGuidepageImageCount, screenH);
+        guideScrollV.pagingEnabled = YES;
+        guideScrollV.bounces = NO;
+        guideScrollV.showsHorizontalScrollIndicator = NO;
+        guideScrollV.delegate = self;
+        guideScrollV.backgroundColor = [UIColor clearColor];
         
-        _guideScrollow = guideScrollow;
+        
+        _guideScrollV = guideScrollV;
     }
-    return _guideScrollow;
+    return _guideScrollV;
 }
 
 - (UIPageControl *)guidePageControl
 {
     if (!_guidePageControl) {
         
-        UIPageControl * pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(self.guideScrollow.bounds.size.width / 2 - 100 / 2, self.guideScrollow.bounds.size.height - 50, 100, 30)];
+        CGFloat w = 160;
+        CGFloat h = 30;
+        CGFloat x = (self.guideScrollV.bounds.size.width - w) * 0.5;
+        CGFloat y = self.guideScrollV.bounds.size.height - 45;
+        
+        UIPageControl * pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake( x, y, w, h)];
         
         [self.view addSubview:pageControl];
         
@@ -66,7 +72,7 @@
 - (void)pageAction:(UIPageControl *)pageControl
 {
     int page = (int)pageControl.currentPage;
-    [self.guideScrollow setContentOffset:CGPointMake(screenW * page, 0) animated:YES];
+    [self.guideScrollV setContentOffset:CGPointMake(screenW * page, 0) animated:YES];
 }
 
 
@@ -92,11 +98,11 @@
 - (void)setupUI
 {
     NSString * imageName = [NSString stringWithFormat:@"guide1Background568h.png"];
-    for (int i=0; i<= self.kGuidepageImageCount; i++)
+    for (NSInteger i=0; i<= self.kGuidepageImageCount; i++)
     {
         UIImageView * imageV = [[UIImageView alloc] initWithFrame:CGRectMake(i * screenW, 0, screenW + 2, screenH)];
-        [self.guideScrollow addSubview:imageV];
-        imageName = [NSString stringWithFormat:@"guide%iBackground568h.png", i + 1];
+        [self.guideScrollV addSubview:imageV];
+        imageName = [NSString stringWithFormat:@"guide%ldBackground568h.png", (i + 1)];
         [imageV setImage:[UIImage imageNamed:imageName]];
         
         if (i == (self.kGuidepageImageCount - 1))
@@ -118,7 +124,7 @@
 }
 
 #pragma mark -- 接收个数
-- (void)setKGuidepageImageCount:(int)kGuidepageImageCount
+- (void)setKGuidepageImageCount:(NSInteger)kGuidepageImageCount
 {
     _kGuidepageImageCount = kGuidepageImageCount;
     
@@ -137,7 +143,7 @@
 #pragma mark - 引导滑动视图滑动的时候调用的代理方法
 - (void)scrollViewDidScroll:(UIScrollView *)sender
 {
-    CGFloat doublePage = self.guideScrollow.contentOffset.x / self.guideScrollow.frame.size.width;
+    CGFloat doublePage = self.guideScrollV.contentOffset.x / self.guideScrollV.frame.size.width;
     int intPage = (int)(doublePage + 0.5);
     
     self.guidePageControl.currentPage = intPage;

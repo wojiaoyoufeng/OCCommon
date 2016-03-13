@@ -2,8 +2,8 @@
 //  CodeBlock.h
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/1.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/1.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
         //=================== 培育技术阅读的习惯 ===================
@@ -11,6 +11,22 @@
 
 /**
  此代码块, 为了直接养成个人代码习惯, 节约时间, 使用方便
+ 
+ 代码片段的备份
+ Xcode中的代码片段默认放在下面的目录中：
+ ~/Library/Developer/Xcode/UserData/CodeSnippets
+ 
+ 将目录中的代码片段备份，也可以将其直接拷出来放在不同的电脑上使用。
+ 
+ */
+
+/**
+ 在“Finder”中找到“应用程序”，然后找到“Xcode.app”，右键“显示包内容”
+ 
+ 找到这个路径：/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/Source/Cocoa Touch Class.xctemplate/NSObjectObjective-C
+ 
+ 修改里面文件模板或者项目模板中的内容，完全可以自定义
+ 
  */
 
 // ============  Objective-C  ==============
@@ -39,15 +55,16 @@ pragma mark -- <#desc...#>
 // Button控件生成 initButton
 UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
 [<#view#> addSubview:button];
+button.frame = CGRectMake(<#0#>, <#0#>, <#0#>, <#0#>);
 [button addTarget:<#(nullable id)#> action:@selector(<#selector#>) forControlEvents:UIControlEve<#event#>];
 
-[button setBackgroundColor:<#(UIColor * _Nullable)#>];
-[button setBackgroundImage:[UIImage <#image#>] forState:<#(UIControlState)#>];
+[button setBackgroundColor:[UIColor <#color#>]];
+[button setBackgroundImage:[UIImage <#image#>] forState:UIControlState<#state#>];
 
-[button setImage:[UIImage <#image#>] forState:<#(UIControlState)#>];
+[button setImage:[UIImage <#image#>] forState:UIControlState<#state#>];
 
-[button setTintColor:<#(UIColor * _Nullable)#>];
-[button setTitle:<#(nullable NSString *)#> forState:<#(UIControlState)#>];
+[button setTintColor:[UIColor <#color#>]];
+[button setTitle:<#(nullable NSString *)#> forState:UIControlState<#state#>];
 
 [button setTag:100 + <#1#>];
 
@@ -61,21 +78,20 @@ button.enabled = YES;
 // ImageView控件生成 initImageview
 UIImageView * imageV = [[UIImageView alloc] init];
 [<#view#> addSubview:imageV];
-imageV.backgroundColor = [UIColor whiteColor];
 imageV.frame = CGRectMake(<#0#>, <#0#>, <#0#>, <#0#>);
+imageV.backgroundColor = [UIColor whiteColor];
 [imageV setImage:[UIImage <#image#>]];
 [imageV setHighlightedImage:[UIImage <#image#>]];
 
 // Label控件生成 initLabel
 UILabel * label = [[UILabel alloc] init];
-label.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
 [<#view#> addSubview:label];
+label.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
 label.numberOfLines = 0;
 [label setFont:[UIFont <#font#>]];
 [label setTextColor:[UIColor <#color#>]];
-[label setTextAlignment:<#(NSTextAlignment)#>];
-[label setBackgroundColor:<#(UIColor * _Nullable)#>];
-[label sizeToFit];
+[label setTextAlignment:NSTextAlignmen<#center#>];
+[label setBackgroundColor:[UIColor <#color#>]];
 label.text = <#text#>
 
 // View控件生成 initView
@@ -95,6 +111,43 @@ CGFloat w = <#float#>
 CGFloat h = <#float#>
 CGFloat x = <#float#>
 CGFloat y = <#float#>
+
+// UIScrollView生成 initScrollView
+UIScrollView * scrollV = [[UIScrollView alloc] init];
+[<#view#> addSubview:scrollV];
+scrollV.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+scrollV.delegate = self;
+scrollV.backgroundColor = [UIColor <#color#>];
+scrollV.contentOffset = CGPointMake(<#CGFloat x#>, <#CGFloat y#>);
+scrollV.contentSize = CGSizeMake(<#CGFloat width#>, <#CGFloat height#>);
+UIEdgeInsets edgeInsets = UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>);
+scrollV.contentInset = edgeInsets;
+scrollV.directionalLockEnabled = NO;
+scrollV.bounces = NO;
+scrollV.alwaysBounceVertical = NO;
+scrollV.alwaysBounceHorizontal = NO;
+scrollV.pagingEnabled = YES;
+scrollV.scrollEnabled = YES;
+scrollV.showsHorizontalScrollIndicator = NO;
+scrollV.showsVerticalScrollIndicator = NO;
+/** 通常不设置
+ scrollV.scrollIndicatorInsets = UIEdgeInsetsMake(<#CGFloat top#>, <#CGFloat left#>, <#CGFloat bottom#>, <#CGFloat right#>);
+ scrollV.indicatorStyle = UIScrollViewIndicatorStyleDefault;
+ scrollV.decelerationRate = <#float#>;
+ scrollV.tracking = YES;
+ scrollV.dragging = YES;
+ scrollV.decelerating = YES;
+ scrollV.delaysContentTouches = YES;
+ scrollV.canCancelContentTouches = YES;
+ scrollV.minimumZoomScale = <#float#>;
+ scrollV.maximumZoomScale = <#float#>;
+ scrollV.bouncesZoom = YES;
+ scrollV.zooming = YES;
+ scrollV.zoomBouncing = YES;
+ scrollV.scrollsToTop = YES;
+ scrollV.directionalPressGestureRecognizer = <#UIGestureRecognizer#>;
+ scrollV.keyboardDismissMode = UIScrollViewKeyboardDismissModeNone;
+ */
 
 // UITableview生成 initTableView
 UITableView * tableV = [[UITableView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>) style:UITableViewStyl<#style#>];
@@ -205,12 +258,12 @@ Sbar.showsSearchResultsButton = YES;
 
 Sbar.backgroundColor = [UIColor <#color#>];
 [Sbar setBackgroundImage:[UIImage <#image#>]];
-[Sbar setImage:[UIImage <#image#>] forSearchBarIcon:<#(UISearchBarIcon)#> state:<#(UIControlState)#>];
+[Sbar setImage:[UIImage <#image#>] forSearchBarIcon:<#(UISearchBarIcon)#> state:UIControlState<#state#>];
 
-Sbar.barTintColor =[UIColor <#color#>];
+Sbar.barTintColor = [UIColor <#color#>];
 Sbar.tintColor = [UIColor <#color#>];
-Sbar.prompt = <#text#>
-Sbar.placeholder = <#text#>
+Sbar.prompt = <#text#>;
+Sbar.placeholder = <#text#>;
 
 // 索引字符
 NSArray *arr = @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z",@"#"];
@@ -273,7 +326,7 @@ for (<#int#> i = 0; i < <#count#>; i++){
     
     <#wirte#>
 }
-// forj循环 forj
+// foyf循环 foyf
 for (<#int#> j = 0; j < <#count#>; j++){
     
     <#wirte#>

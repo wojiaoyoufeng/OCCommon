@@ -2,8 +2,8 @@
 //  CountryViewCell.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/2.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/2.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import "CountryViewCell.h"
@@ -52,7 +52,9 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
-        
+        [self countryFlagImageV];
+        [self countryNameL];
+        [self countryCodeL];
     }
     return self;
 }
@@ -68,9 +70,13 @@
     return cell;
 }
 
+/**
+ *  动态属性
+ */
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    NSLog(@"       %@            ", self.countryNameL.text);
 }
 
 - (void)layoutSubviews

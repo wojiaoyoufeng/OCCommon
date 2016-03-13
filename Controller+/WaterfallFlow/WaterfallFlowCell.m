@@ -2,8 +2,8 @@
 //  WaterfallFlowCell.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/5.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/5.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import "WaterfallFlowCell.h"
@@ -18,10 +18,9 @@
 {
     if (!_imageView) {
         
-        UIImageView * imgeV  = [[UIImageView alloc] initWithFrame:self.bounds];
-        [imgeV setImage:[UIImage imageNamed:@"loading.png"]];
-        [imgeV setBackgroundColor:[UIColor greenColor]];
+        UIImageView * imgeV  = [[UIImageView alloc] init];
         [self.contentView addSubview:imgeV];
+        [imgeV setImage:[UIImage imageNamed:@"loading.png"]];
 
         _imageView = imgeV;
     }
@@ -32,13 +31,13 @@
 {
     if (!_botLabel) {
         
-        CGFloat labelH = 25;
-        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height - labelH, self.frame.size.width, labelH)];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [UIFont systemFontOfSize:15];
-        label.backgroundColor = [UIColor clearColor];
-        
+        UILabel * label = [[UILabel alloc] init];
         [self.contentView addSubview:label];
+        
+        label.textAlignment = NSTextAlignmentCenter;
+        [label setTextColor:[UIColor whiteColor]];
+        label.font = [UIFont systemFontOfSize:17];
+        label.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.4];
         
         _botLabel = label;
     }
@@ -48,10 +47,10 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self)
+    if (self = [super initWithFrame:frame])
     {
-       
+        [self imageView];
+        [self botLabel];
     }
     
     return self;
@@ -60,10 +59,26 @@
 + (instancetype)waterfallFlowCellCollectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * waterfallFlowCellId = @"WaterfallFlowCell";
+    
     WaterfallFlowCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:waterfallFlowCellId forIndexPath:indexPath];
     
     return cell;
 }
 
+/**
+  当布局发送改变的都会调用这个方法
+  如果是涉及动态布局, 一定要重写这个方法
+ */
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGFloat w = self.contentView.frame.size.width;
+    CGFloat h = self.contentView.frame.size.height;
+    self.imageView.frame = CGRectMake(0, 0, w, h);
+    
+    CGFloat lh = 25;
+    CGFloat ly = h - lh;
+    self.botLabel.frame = CGRectMake(0, ly, w, lh);
+}
 
 @end

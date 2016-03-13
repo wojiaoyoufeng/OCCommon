@@ -2,8 +2,8 @@
 //  WaterfallFlowLayout.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/5.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/5.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import "WaterfallFlowLayout.h"
@@ -78,20 +78,6 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
     }
 }
 
-
-/*
- columnCount;
- columnMargin;
- rowMargin;
- edgeInsets;
- */
-
-//- (void)setColumnCount:(CGFloat)columnCount
-//{
-//    _columnCount = columnCount;
-//    
-//}
-
 #pragma mark -- lazy
 - (NSMutableArray *)attrsArray
 {
@@ -119,6 +105,9 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
 - (void)prepareLayout
 {
     [super prepareLayout];
+    
+    self.contentHeight = 0;
+    
     // 清除以前计算的所有高度
     [self.columnHeights removeAllObjects];
     for (NSInteger i = 0; i < self.columnCount; i++) {
@@ -127,7 +116,7 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
     
     // 清除之前所有的布局属性
     [self.attrsArray removeAllObjects];
-    
+  
     // 开始创建每一个cell对应的布局属性
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     for (NSInteger i = 0; i < count; i++) {
@@ -135,6 +124,7 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
         // 获取indexPath位置cell对应的布局属性
         UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+        
         [self.attrsArray addObject:attrs];
     }
 }
@@ -142,15 +132,14 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
 /**
  * 决定cell的排布
  */
-- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    return self.attrsArray;
+     return self.attrsArray;
 }
 
 /**
  * 返回indexPath位置cell对应的布局属性
  */
-
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {   // 创建布局属性
     UICollectionViewLayoutAttributes * attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
@@ -160,7 +149,7 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
     
     // 设置布局属性的frame
     CGFloat w = (collectionViewW - self.edgeInsets.left - self.edgeInsets.right - (self.columnCount - 1) * self.columnMargin) / self.columnCount;
-    CGFloat h = [self.delegate waterfallFlowLayout:self heightForItemAtIndex:indexPath.row itemWidth:w];
+    CGFloat h = [self.delegate waterfallFlowLayout:self heightForItemAtIndex:indexPath.item itemWidth:w];
     
     // 找出高度最短的那一列
     NSInteger destColumn = 0;
@@ -168,7 +157,6 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
     for (NSInteger i = 1; i < self.columnCount; i++) {
         // 取得第i列的高度
         CGFloat columnHeight = [self.columnHeights[i] doubleValue];
-        
         if (minColumnHeight > columnHeight) {
             minColumnHeight = columnHeight;
             destColumn = i;
@@ -193,6 +181,9 @@ static const UIEdgeInsets DefaultEdgeInsets = {10, 10, 10, 10};
     
     return attrs;
 }
+
+
+
 
 - (CGSize)collectionViewContentSize
 {

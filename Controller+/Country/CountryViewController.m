@@ -2,8 +2,8 @@
 //  CountryViewController.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/2.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/2.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #define barH 44 //导航栏的高度
@@ -250,8 +250,8 @@ int _state;
     [self.searchBar setShowsCancelButton:NO animated:YES];
     [self.view endEditing:YES];
 #pragma mark -- 传递数据
-    if ([self.delegate respondsToSelector:@selector(countryViewControllerGetCountryInfo:)]) {
-        [self.delegate countryViewControllerGetCountryInfo:dict];
+    if ([self.delegate respondsToSelector:@selector(yf_countryViewControllerGetCountryInfo:)]) {
+        [self.delegate yf_countryViewControllerGetCountryInfo:dict];
     }
 }
 

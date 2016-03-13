@@ -2,8 +2,8 @@
 //  GuidepageCollectionCell.m
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/5.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/5.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import "GuidepageCollectionCell.h"
@@ -21,7 +21,8 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        
+        [self imageView];
+        [self startButton];
     }
     return self;
 }
@@ -40,7 +41,7 @@
 {
     if (!_imageView) {
         
-        UIImageView * imageV = [[UIImageView alloc] initWithFrame:self.bounds];
+        UIImageView * imageV = [[UIImageView alloc] init];
         [self.contentView addSubview:imageV];
         _imageView = imageV;
     }
@@ -54,8 +55,9 @@
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setImage:[UIImage imageNamed:@"guideStart.png"] forState:UIControlStateNormal];
         [button sizeToFit];
+        
         [button addTarget:self action:@selector(start) forControlEvents:UIControlEventTouchUpInside];
-        button.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.85);
+        
         [self addSubview:button];
         
         _startButton = button;
@@ -71,16 +73,26 @@
     self.imageView.image = image;
 }
 
-- (void)setIndexPath:(NSIndexPath *)indexPath count:(int)count
+- (void)setIndexPath:(NSIndexPath *)indexPath count:(NSInteger)count
 {
-    if (indexPath.row == 0)
+    if (indexPath.row == count - 1)
     {
-        
+        self.startButton.hidden = NO;
     }
     else
     {
-        
+        self.startButton.hidden = YES;
     }
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGFloat w = self.contentView.frame.size.width;
+    CGFloat h = self.contentView.frame.size.height;
+    self.imageView.frame = CGRectMake(0, 0, w, h);
+    self.startButton.center = CGPointMake(w * 0.5, h * 0.88);
 }
 
 #pragma mark -- 进入主页

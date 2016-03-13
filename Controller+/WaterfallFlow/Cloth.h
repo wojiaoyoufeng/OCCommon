@@ -2,8 +2,8 @@
 //  Cloth.h
 //  OCCommon
 //
-//  Created by 一泓明峰 on 16/3/6.
-//  Copyright © 2016年 RJ. All rights reserved.
+//  Created by 游峰 on 16/3/6.
+//  Copyright © 2016年 yf. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
