@@ -28,13 +28,18 @@
     [self.window makeKeyAndVisible];
    
 #pragma mark -- scrollView 引导页
-    GuidepageViewController * vc = [[GuidepageViewController alloc] init];
+        GuidepageViewController * vc = [[GuidepageViewController alloc] init];
 #pragma mark -- collectView 引导页
-//    GuidepageCollectionController * vc = [[GuidepageCollectionController alloc] init];
+    //    GuidepageCollectionController * vc = [[GuidepageCollectionController alloc] init];
 #pragma mark -- 国际列表
-//    CountryViewController * vc = [[CountryViewController alloc] init];
+    //    CountryViewController * vc = [[CountryViewController alloc] init];
 #pragma mark -- 流水布局
-//    WaterfallFlowViewController * vc = [[WaterfallFlowViewController alloc] init];
+    //    WaterfallFlowViewController * vc = [[WaterfallFlowViewController alloc] init];
+#pragma mark -- 列表折叠效果
+    //    FoldingListViewController * vc = [[FoldingListViewController alloc] init];
+#pragma mark -- 推拉列表
+    //    PushPullListViewController * vc = [[PushPullListViewController alloc] init];
+
     
     self.window.rootViewController = vc;
     
