@@ -18,6 +18,7 @@
 #import "WaterfallFlowViewController.h"
 //#import "FoldingListViewController.h"
 //#import "PushPullListViewController.h"
+#import "GesturePwdController.h"
 
 
 //颜色

@@ -42,7 +42,7 @@ int _state;
         
         UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenW, barH)];
         [self.view addSubview:view];
-        view.backgroundColor = [UIColor purpleColor];
+        view.backgroundColor = [UIColor blueColor];
         
         UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn addTarget:self action:@selector(leftBackButttonClick) forControlEvents:UIControlEventTouchUpInside];

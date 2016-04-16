@@ -707,6 +707,12 @@
 		9ADC88F31C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
 		9ADC88F41C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
 		9ADC88F51C85269C00CEE59C /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */; };
+		D012A1771CBEFDD1004BA608 /* GesturePwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A1761CBEFDD1004BA608 /* GesturePwdController.m */; };
+		D012A1781CBEFDD1004BA608 /* GesturePwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A1761CBEFDD1004BA608 /* GesturePwdController.m */; };
+		D012A1791CBEFDD1004BA608 /* GesturePwdController.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A1761CBEFDD1004BA608 /* GesturePwdController.m */; };
+		D012A17C1CBEFFBF004BA608 /* GesturePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A17B1CBEFFBF004BA608 /* GesturePwdView.m */; };
+		D012A17D1CBEFFBF004BA608 /* GesturePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A17B1CBEFFBF004BA608 /* GesturePwdView.m */; };
+		D012A17E1CBEFFBF004BA608 /* GesturePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012A17B1CBEFFBF004BA608 /* GesturePwdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1064,6 +1070,10 @@
 		9ADC88F11C85269C00CEE59C /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		9ADC88F21C85269C00CEE59C /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		9ADC88F71C8527B400CEE59C /* CodeBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBlock.h; sourceTree = "<group>"; };
+		D012A1751CBEFDD1004BA608 /* GesturePwdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePwdController.h; sourceTree = "<group>"; };
+		D012A1761CBEFDD1004BA608 /* GesturePwdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePwdController.m; sourceTree = "<group>"; };
+		D012A17A1CBEFFBF004BA608 /* GesturePwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePwdView.h; sourceTree = "<group>"; };
+		D012A17B1CBEFFBF004BA608 /* GesturePwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePwdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1139,6 +1149,10 @@
 		9A017A561C85FAD800FE64D7 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				D012A1751CBEFDD1004BA608 /* GesturePwdController.h */,
+				D012A1761CBEFDD1004BA608 /* GesturePwdController.m */,
+				D012A17A1CBEFFBF004BA608 /* GesturePwdView.h */,
+				D012A17B1CBEFFBF004BA608 /* GesturePwdView.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -2465,6 +2479,7 @@
 				9ADC88F31C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
 				9A57433E1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A7554CA1C8BBA0900F82301 /* UIScrollView+MJExtension.m in Sources */,
+				D012A1771CBEFDD1004BA608 /* GesturePwdController.m in Sources */,
 				9A7554C11C8BBA0900F82301 /* MJRefreshAutoStateFooter.m in Sources */,
 				9ADC88C61C85104000CEE59C /* BaseViewController.m in Sources */,
 				9A7554C41C8BBA0900F82301 /* MJRefreshBackStateFooter.m in Sources */,
@@ -2472,6 +2487,7 @@
 				9A7554BA1C8BBA0900F82301 /* MJRefreshAutoFooter.m in Sources */,
 				9A7554CE1C8BBA0900F82301 /* NSData+ImageContentType.m in Sources */,
 				9A7554D11C8BBA0900F82301 /* SDWebImageDecoder.m in Sources */,
+				D012A17C1CBEFFBF004BA608 /* GesturePwdView.m in Sources */,
 				9A7554BE1C8BBA0900F82301 /* MJRefreshHeader.m in Sources */,
 				9A7554BF1C8BBA0900F82301 /* MJRefreshAutoGifFooter.m in Sources */,
 				9A3B799A1C8A7FC1004304FD /* WaterfallFlowCell.m in Sources */,
@@ -2525,12 +2541,14 @@
 				9A017A381C854D2300FE64D7 /* Singleton.m in Sources */,
 				9A017A4A1C85F3F600FE64D7 /* NSString+Encryption.m in Sources */,
 				9ADC88F41C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
+				D012A1781CBEFDD1004BA608 /* GesturePwdController.m in Sources */,
 				9A57433F1C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A017D601C85FCAD00FE64D7 /* CountryViewCell.m in Sources */,
 				9ADC88C71C85104000CEE59C /* BaseViewController.m in Sources */,
 				9A017A591C85FAD800FE64D7 /* CountryViewController.m in Sources */,
 				9ADC88C11C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9ADC88D21C85125100CEE59C /* NSString+Emoji.m in Sources */,
+				D012A17D1CBEFFBF004BA608 /* GesturePwdView.m in Sources */,
 				9A14A0211C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01E1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
 				9ADC88D91C8517C100CEE59C /* Foundation+LOG.m in Sources */,
@@ -2549,12 +2567,14 @@
 				9A017A391C854D2300FE64D7 /* Singleton.m in Sources */,
 				9A017A4B1C85F3F600FE64D7 /* NSString+Encryption.m in Sources */,
 				9ADC88F51C85269C00CEE59C /* UIWindow+Extension.m in Sources */,
+				D012A1791CBEFDD1004BA608 /* GesturePwdController.m in Sources */,
 				9A5743401C84BA1200FE37F0 /* UIView+Extension.m in Sources */,
 				9A017D611C85FCAD00FE64D7 /* CountryViewCell.m in Sources */,
 				9ADC88C81C85104000CEE59C /* BaseViewController.m in Sources */,
 				9A017A5A1C85FAD800FE64D7 /* CountryViewController.m in Sources */,
 				9ADC88C21C85104000CEE59C /* BaseNavigationController.m in Sources */,
 				9ADC88D31C85125100CEE59C /* NSString+Emoji.m in Sources */,
+				D012A17E1CBEFFBF004BA608 /* GesturePwdView.m in Sources */,
 				9A14A0221C849C6E00A7FAA0 /* ViewController.m in Sources */,
 				9A14A01F1C849C6E00A7FAA0 /* AppDelegate.m in Sources */,
 				9ADC88DA1C8517C100CEE59C /* Foundation+LOG.m in Sources */,
